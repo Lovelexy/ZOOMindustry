@@ -1,0 +1,8 @@
+/* Font import example*/
+// usando o mixin @include font-face('Nome da Fonte', pasta/arquivo-da-fonte, peso, estilo, formatos);
+/* @include font-face('FontName', FontFolder/fontfile, 400, normal, eot woff svg); */
+
+@include new-font-face('Helvetica LT Std', helvetica/HelveticaLTStd-Light, 300, normal, eot woff woff2);
+@include new-font-face('Helvetica LT Std', helvetica/HelveticaLTStd-Roman, 400, normal, eot woff woff2);
+@include new-font-face('Helvetica LT Std', helvetica/HelveticaLTStd-Bold, 700, normal, eot woff woff2);
+@include new-font-face('Overpass', overpass/Overpass-Regular, 400, normal, eot woff woff2);

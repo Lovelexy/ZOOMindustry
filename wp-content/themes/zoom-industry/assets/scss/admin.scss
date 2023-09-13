@@ -1,0 +1,71 @@
+/*** COLORs ***/
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-primary: #EC974E;
+$color-secondary: #3C3C3B;
+
+body.login {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-color: $color-white !important;
+    background-image: url('../../dist/images/bg-degrade.png');
+    position: relative;
+
+    a{
+        color: $color-primary;
+    }
+
+    #login {
+        h1 {
+            a {
+                background-image: url('../../dist/images/logos/logo-zoom-industry.svg');
+                background-repeat: no-repeat;
+                background-position: center top;
+                -webkit-background-size: auto;
+                background-size: 100% auto;
+                margin: 0 auto 25px auto;
+                width: 245px;
+                height: 64px;
+                display: table;
+            }
+
+            &.admin-email__heading {
+                color: #fff;
+            }
+        }
+    }
+
+    form {
+        background: $color-secondary !important;
+
+        label {
+            color: $color-white !important;
+        }
+
+        p{
+            color: $color-white;
+        }
+    }
+
+    #backtoblog a,
+    #nav a {
+        text-decoration: none;
+    }
+}
+
+.wp-core-ui .button-primary {
+    background: $color-primary !important;
+    box-shadow: none !important;
+    color: $color-white;
+    text-decoration: none;
+    text-shadow: none !important;
+    border: none !important;
+    transition: all 0.3s ease-out 0s !important;
+
+    &:hover {
+        background: $color-primary !important;
+        opacity: 0.8;
+    }
+}

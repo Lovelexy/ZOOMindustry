@@ -1,0 +1,118 @@
+.consult-filter{
+    padding: 3.125rem 0 3.1875rem;
+    background: #F8F8F8;
+    .form-filter{
+        max-width: 545px;
+        h4{
+            font-weight: 600;
+        }
+        form{
+            .form-group{
+                margin-bottom: 15px;
+            }
+            input{
+                width: 100%;
+                height: 40px;
+                padding: 0 15px;
+                font-size: 14px;
+                border-radius: 5px;
+                border: solid 1px #ECE5E5;
+                outline: none!important;
+            }
+            .btn{
+                border-radius: 5px;
+                font-size: 14px;
+                height: 40px;
+                min-width: 140px;
+            }
+        }
+    }
+    .intro{
+        font-size: 14px;
+        font-weight: 300;
+        p{
+            font-size: 14px;
+        }
+        a{
+            color: #EC974E;
+            text-decoration: underline;
+        }
+    }
+}
+
+.resultCertificate{
+    padding: 3.125rem 0 3.1875rem;
+    h4{
+        padding: 10px;
+        border-top: solid 6px #EC974E;
+        display: table;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .table-striped{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .table-striped > tbody > tr > td{
+        border-color: #ffffff;
+        padding: 10px;
+    }
+    .table-striped > tbody > tr > th{
+        font-weight: 300;
+    }
+    .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+        background-color: #ffffff;
+        border-color: #E6E6E6;
+        box-shadow: none;
+     }
+     .table>:not(:first-child){
+         border-top: 0;
+     }
+}
+
+.cert_loader{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(#000, .2);
+    align-items: center;
+    justify-content: center;
+}
+
+#certError{
+    .modal-dialog{
+        max-width: 400px;
+        .modal-content{
+            border: 0;
+            border-radius: 0;
+        }
+    }
+    .modal-body{
+        .cont{
+            border-top: solid 80px #F0F0F0;
+            padding: 0 30px 30px;
+            font-size: 14px;
+            font-weight: 300;
+            p{
+                font-size: 14px;
+            }
+            img{
+                margin-top: -40px;
+                margin-bottom: 20px;
+            }
+            h2{
+                font-weight: 700;
+            }
+            .btn{
+                border-radius: 5px;
+                font-size: 14px;
+                height: 40px;
+                min-width: 140px;
+            }
+        }
+    }
+}

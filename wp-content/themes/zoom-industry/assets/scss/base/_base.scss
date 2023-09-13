@@ -1,0 +1,60 @@
+body {
+    font-family: $font-primary;
+    font-size: $font-size;
+    color: $color-secondary;
+    background: $color-white;
+}
+
+a {
+    transition: $ease-0;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+a:focus,
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+strong{
+    font-weight: 700;
+}
+
+.main-content{
+   padding-top: 85px;
+    margin: 0 auto;
+    max-width: 1600px;
+    background: #f9f9f9;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    @media (max-width: 991px) {
+        padding-top: 60px;
+        padding-top: 85px;
+    margin: 0 auto;
+    max-width: 1600px;
+    background: #f9f9f9;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
+    }
+
+    &.internal{
+        padding-top: 85px;
+padding-top: 85px;
+    margin: 0 auto;
+    max-width: 1600px;
+    background: #f9f9f9;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        @media (max-width: 991px) {
+            padding-top: 60px;
+        }
+    }
+
+}

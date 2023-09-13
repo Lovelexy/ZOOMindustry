@@ -1,0 +1,53 @@
+table{
+    &.striped{
+        >tbody{
+            >tr{
+                &:nth-of-type(odd){
+                    background: $color-3;
+                    border-bottom: 1px solid #e6e6e6;
+
+                    @media (max-width: 991px){
+                        background: $color-white;
+                    }
+                }
+            }
+        }
+
+        tr{
+            @media (max-width: 991px){
+                border-bottom: 1px solid #e6e6e6;
+
+                &:first-child{
+                    border-top: 1px solid #e6e6e6;
+                }
+            }
+
+            td{
+                padding: .7rem 2rem;
+                font-size: rem(14);
+                color: $color-secondary;
+                border-right: 1px solid #e6e6e6;
+                vertical-align: middle;
+
+                @media (max-width: 991px){
+                    padding: .5rem 1rem;
+                    display: block;
+                    border: none;
+
+                    &:first-child{
+                        font-weight: 700;
+                    }
+                }
+
+                p{
+                    margin: 0;
+                    font-size: rem(14);
+                }
+
+                &:last-child{
+                    border-right: none;
+                }
+            }
+        }
+    }
+}

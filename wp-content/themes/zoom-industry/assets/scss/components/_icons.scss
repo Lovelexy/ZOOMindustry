@@ -1,0 +1,30 @@
+.icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+
+    &-facebook {
+        background-image: get-icon('facebook', $color-6);
+        width: 23px;
+        height: 23px;
+    }
+
+    &-instagram {
+        background-image: get-icon('instagram', $color-6);
+        width: 23px;
+        height: 23px;
+    }
+
+    &-youtube {
+        background-image: get-icon('youtube', $color-6);
+        width: 23px;
+        height: 23px;
+    }
+
+    &-linkedin {
+        background-image: get-icon('linkedin', $color-6);
+        width: 23px;
+        height: 23px;
+    }
+}

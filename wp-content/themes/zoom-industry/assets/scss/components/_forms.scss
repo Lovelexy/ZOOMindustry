@@ -1,0 +1,167 @@
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid $color-5;
+    background-color: transparent !important;
+    font-size: rem(13);
+    color: #212529;
+    width: 100%;
+    padding: 11px 15px 0;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    z-index: 99;
+
+    &:focus {
+        box-shadow: none;
+        border-color: $color-primary;
+        color: #212529;
+    }
+
+    &::placeholder {
+        color: $color-7;
+        opacity: 1;
+    }
+}
+
+.form-floating>.form-control {
+    padding: 0.5rem .75rem;
+    color: $color-7;
+}
+
+.form-floating>.form-control, .form-floating>.form-select {
+    height: calc(2.4rem + 2px);
+    line-height: 1.25;
+}
+
+.form-floating>label {
+    padding: 0.5rem .75rem;
+    font-size: rem(13);
+    color: $color-7;
+}
+
+.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label{
+    opacity: 1;
+    transform: scale(.85) translateY(-.4rem) translateX(.15rem);
+}
+
+.form-select{
+    border-radius: 5px;
+    border: 1px solid $color-5;
+    font-size: rem(13);
+    color: $color-7;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background: transparent url($img-path + "icons/icon-chevron-bottom.svg") no-repeat 98% center;
+    background-size: 12px auto;
+
+    &:focus {
+        box-shadow: none;
+        border-color: $color-primary;
+        background-color: transparent;
+    }
+}
+
+.form-floating>.form-select {
+    padding-top: 1.125rem;
+    padding-bottom: .125rem;
+}
+
+textarea, textarea.form-control  {
+    resize: none;
+    overflow: hidden;
+    max-height: 150px;
+    height: auto;
+}
+
+.form-floating>textarea.form-control{
+    height: calc(7.4rem + 2px);
+}
+
+.wpcf7 .ajax-loader{
+    position: absolute;
+}
+
+.wpcf7-not-valid-tip {
+    color: $color-error;
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+}
+
+.wpcf7 form .wpcf7-response-output{
+    display: none;
+}
+
+.wpcf7{
+    form {
+        .wpcf7-form-control-wrap {
+            position: static;
+        }
+
+        .form-control {
+            &.wpcf7-not-valid{
+                border-color: $color-error;
+            }
+        }
+
+        label{
+            position: absolute;
+            top: 10px;
+            left: 0;
+            padding: 0 15px;
+            font-size: rem(13);
+            color: $color-7;
+            transition: all 0.25s ease-in-out;
+            z-index: 1;
+
+            &.focused {
+                top: 1px;
+                font-size: 11px;
+                opacity: 0.9;
+            }
+        }
+    }
+}
+
+.form-check{
+    margin-bottom: 1rem;
+
+    .form-check-label{
+        font-size: rem(12);
+        line-height: 15px;
+        color: $color-7;
+    }
+
+    .form-check-input {
+        float: left;
+        margin-left: -1.9em;
+        border-radius: 5px;
+        width: 20px;
+        height: 20px;
+        border-color: $color-5;
+    }
+}
+
+.wpcf7-checkbox{
+    .wpcf7-list-item{
+        margin: 0;
+
+        input[type="checkbox"]{
+            float: left;
+            margin-right: 15px;
+        }
+
+        .wpcf7-list-item-label{
+            font-size: rem(12);
+            line-height: 15px;
+            color: $color-7;
+            float: left;
+            max-width: 90%;
+        }
+    }
+}

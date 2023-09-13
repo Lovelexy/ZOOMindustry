@@ -1,0 +1,23 @@
+{
+  "name": "zoomindustry",
+  "version": "1.0.0",
+  "description": "Zoom Industry Wordpress Theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp watch",
+    "prod": "gulp"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify-es": "^3.0.0"
+  }
+}

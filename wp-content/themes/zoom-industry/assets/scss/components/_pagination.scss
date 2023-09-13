@@ -1,0 +1,36 @@
+.custom-pagination{
+    margin: 0 auto;
+    text-align: center;
+
+    .pagination {
+        @include justify-content(center);
+
+        .page-item{
+            &.active {
+                .page-link{
+                    color: $color-white;
+                    background: $color-primary;
+                    border-color: $color-primary;
+
+                    &:hover {
+                        background: lighten($color-primary, 8%);
+                    }
+                }
+            }
+
+            .page-link {
+                color: $color-primary;
+
+                &:hover{
+                    text-decoration: none;
+                    background: transparent;
+                    color: lighten($color-primary, 8%);
+                }
+
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

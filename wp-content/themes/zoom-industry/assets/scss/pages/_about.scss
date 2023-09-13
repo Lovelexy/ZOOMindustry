@@ -1,0 +1,324 @@
+.page-template-about {
+    .about-intro{
+        position: relative;
+        overflow: hidden;
+        background: url($img-path + "texture-square-degrade.jpg") no-repeat left top;
+        background-size: 53% auto;
+
+        @media (max-width: 1320px){
+            background-size: 70% auto;
+        }
+
+        @media (max-width: 991px){
+            background-size: cover;
+
+            .row{
+                flex-direction: column-reverse;
+            }
+        }
+
+        &__text{
+            .wrap{
+                padding-top: 4rem;
+                padding-bottom: 2rem;
+                padding-right: 25%;
+
+                @media (max-width: 991px){
+                    padding-top: 2rem;
+                    padding-right: 0;
+                }
+
+                .page-title{
+                    margin-bottom: 1rem;
+                }
+
+                p{
+                    font-size: rem(14);
+                    line-height: 19px;
+                    text-align: justify;
+                }
+            }
+        }
+
+        &__image{
+            max-height: 475px;
+            height: 100%;
+            overflow: hidden;
+            min-height: 475px;
+
+            @media (max-width: 991px){
+                max-height: none;
+                height: 200px;
+                min-height: auto;
+            }
+
+            .about-intro-bg{
+                background-position: center top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                width: 50%;
+                height: 100%;
+                overflow: hidden;
+                @include flexbox;
+                align-items: center;
+
+                @media (max-width: 991px){
+                    width: 100%;
+                    height: 200px;
+                    position: relative;
+                }
+            }
+        }
+    }
+
+    .about-group{
+        padding: 4rem 0 3rem;
+
+        @media (max-width: 991px){
+            padding: 3rem 0 2rem;
+        }
+
+        &__text{
+            p{
+                font-size: rem(14);
+                line-height: 19px;
+                text-align: justify;
+            }
+        }
+
+        &__video{
+            figure{
+                position: relative;
+                max-width: 530px;
+                margin: 0;
+
+                @media (max-width: 991px){
+                    margin: 0 auto 2rem;
+                }
+
+                a{
+                    display: block;
+
+                    &:after{
+                        content: "";
+                        background: url($img-path + "icons/icon-play.svg") no-repeat center top;
+                        background-size: cover;
+                        position: absolute;
+                        width: 46px;
+                        height: 68px;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        transform: translate(0, -50%);
+                        top: 50%;
+                    }
+
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-infra{
+        margin: 3rem 0 6rem;
+        position: relative;
+        overflow: hidden;
+
+        @media (max-width: 991px){
+            margin: 0rem 0 3rem;
+        }
+
+        &__text{
+            .wrap{
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                padding-right: 31%;
+
+                @media (max-width: 991px){
+                    padding: 0;
+                }
+
+                p{
+                    font-size: rem(14);
+                    line-height: 19px;
+                    text-align: justify;
+                }
+            }
+        }
+
+        &__image{
+            overflow: hidden;
+
+            figure{
+                max-height: 320px;
+                overflow: hidden;
+                margin: 0;
+                position: absolute;
+                width: 50%;
+                height: 100%;
+                top: 50%;
+                transform: translate(0, -50%);
+
+                @media (max-width: 991px){
+                    position: relative;
+                    width: 100%;
+                    top: 0;
+                    transform: none;
+                }
+
+                img{
+                    width: 100%;
+                    max-height: 320px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+
+    .about-cases{
+        padding: 2rem 0 6rem;
+
+        @media (max-width: 991px){
+            padding: 2rem 0 5rem;
+        }
+
+        .section-title {
+            margin-bottom: 4rem;
+        }
+
+        &__list{
+            padding: 0 3rem;
+
+            .about-cases__item{
+                margin: 0 10px;
+
+                a{
+                    img{
+                        max-width: 180px;
+                        width: 100%;
+                        margin: 0 auto;
+                        border-radius: 10px;
+                        height: 120px;
+                        object-fit: cover;
+                    }
+
+                    &:hover{
+                        img{
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-slider {
+            .slick-arrow.slick-prev{
+                top: 40%;
+            }
+        }
+    }
+
+    .about-mission{
+        background: url($img-path + "texture-dark-gray.png") repeat 0 top;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+
+        @media (max-width: 991px){
+            background-size: contain;
+
+            .row{
+                flex-direction: column-reverse;
+            }
+        }
+
+        &__text{
+            .wrap{
+                padding-top: 3rem;
+                padding-bottom: 2rem;
+                padding-right: 9%;
+
+                h3{
+                    color: $color-white;
+                    border-bottom: 2px solid $color-primary;
+                    font-size: rem(20);
+                    line-height: 24px;
+                    font-weight: 700;
+                    display: inline-block;
+                }
+
+                p{
+                    font-size: rem(14);
+                    line-height: 19px;
+                    color: $color-white;
+                }
+            }
+        }
+
+        &__image{
+            figure{
+                max-height: 510px;
+                overflow: hidden;
+                margin: 0;
+                position: absolute;
+                width: 50%;
+                height: 100%;
+                top: 50%;
+                transform: translate(0, -50%);
+
+                @media (max-width: 991px){
+                    width: 100%;
+                    top: 0;
+                    height: 250px;
+                    position: relative;
+                    transform: none;
+                }
+
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: left;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .about-brands{
+        padding: 4rem 0;
+        position: relative;
+
+        @media (max-width: 991px){
+            padding: 3rem 0;
+        }
+
+        &__list{
+            @include flexbox;
+            @include justify-content(space-between);
+            @include align-items(center);
+
+            @media (max-width: 991px){
+                @include flex-wrap(wrap);
+                @include justify-content(center);
+            }
+
+            .about-brands__item{
+                max-width: 150px;
+
+                @media (max-width: 991px){
+                    padding: 0 20px 10px;
+                }
+
+                a{
+                    img{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
