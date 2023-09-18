@@ -67,7 +67,12 @@ function theme_set_theme_supports()
 }
 
 add_action('after_setup_theme', 'theme_set_theme_supports');
-
+function add_custom_jquery() {
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', false, null);
+    wp_enqueue_script('jquery');
+}
+add_action('wp_enqueue_scripts', 'add_custom_jquery');
 /**
  * Declare theme width global var
  */

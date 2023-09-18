@@ -1,4 +1,7 @@
+ //Forms alternar
+ 
 (function ($) {
+  console.log('Script carregado!');
   //Menu mobile
   function menuMobile() {
     $(".navbar-toggler[data-trigger]").on("click", function (e) {
@@ -16,6 +19,18 @@
         $("body").removeClass("overlay-active");
       }
     });
+    jQuery(document).on('change', '#tipo_documento', function() {
+      var selecao = jQuery(this).val();
+      console.log('Seleção alterada para:', selecao);
+      
+      if (selecao === 'cpf') {
+          jQuery('#form_cnpj').hide();
+          jQuery('#form_cpf').show();
+      } else if (selecao === 'cnpj') {
+          jQuery('#form_cpf').hide();
+          jQuery('#form_cnpj').show();
+      }
+  });
 
     $(".btn-close, .screen-overlay").click(function (e) {
       $(".screen-overlay").removeClass("show");
@@ -43,6 +58,9 @@
 
     AOS.refresh();
   }
+ 
+
+
 
   //Slider Cases
   function sliderCases() {
@@ -189,7 +207,18 @@
               $(this).val( first + move + '-' + lastfour );
           }
         });​
-
+        
+          $('.date').mask('11/11/1111');
+          $('.time').mask('00:00:00');
+          $('.date_time').mask('00/00/0000 00:00:00');
+          $('.cep').mask('00000-000');
+          $('.phone').mask('0000-0000');
+          $('.phone_with_ddd').mask('(00) 0000-0000');
+          $('.phone_us').mask('(000) 000-0000');
+          $('.mixed').mask('AAA 000-S0S');
+          $('.cpf').mask('000.000.000-00', {reverse: true});
+          $('.money').mask('000.000.000.000.000,00', {reverse: true});
+        
         $(".cnpj").mask("99.999.999/9999-99");
         $(".full-cep").mask("00000-000");
         $(".full-date").mask("00/00/0000");

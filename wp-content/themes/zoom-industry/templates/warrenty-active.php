@@ -31,7 +31,7 @@ get_header();
     </section>
     <div class="template-page-warrenty-active folder-template container">
         <section class="partners-text-first">
-            <div class="container">
+            <div class="container p-0">
                 <?php if (get_field('title_sec_text_1_partners')) : ?>
                     <div class="section-title" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="150">
                         <h2><?php the_field('title_sec_text_1_partners'); ?></h2>
@@ -45,28 +45,23 @@ get_header();
             </div>
         </section>
         <section class="partners-text-second">
-            <div class="container">
+            <div class="container p-0">
                 <div class="row">
-                    <div class="partners-text-second__text col-md-6 pe-md-5">
+                    <div class="partners-text-second__text col-md-8 pe-md-5">
                         <div class="wrap">
-                            <?php if (get_field('title_sec_text_2_partners')) : ?>
-                                <div class="section-title" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="150">
-                                    <h2><?php the_field('title_sec_text_2_partners'); ?></h2>
-                                </div>
-                            <?php endif; ?>
                             <?php if (get_field('text_sec_text_2_partners')) : ?>
                                 <div class="section-text" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="150">
                                     <?php the_field('text_sec_text_2_partners'); ?>
                                 </div>
                             <?php endif; ?>
-                            <a href="<?php the_field('btn_link_sec_text_2_partners'); ?>" class="btn btn-md btn-primary" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="150"><?php the_field('btn_text_sec_text_2_partners'); ?></a>
+                            
                         </div>
                     </div>
-                    <div class="partners-text-second__image col-md-6 p-md-0">
+                    <div class="partners-text-second__image col-md-4 p-md-0">
                         <?php
                         $image_partner= get_field('img_sec_text_2_partners');
                         if (!empty($image_partner)) : ?>
-                            <figure>
+                            <figure data-aos="fade-up" data-aos-easing="ease-in-out">
                                 <img src="<?php echo esc_url($image_partner['url']); ?>" alt="<?php echo esc_attr($image_partner['alt']); ?>" />
                             </figure>
                         <?php endif; ?>
@@ -84,16 +79,45 @@ get_header();
                         <h2><?php the_field('title_form_partners'); ?></h2>
                     </div>
                 <?php endif; ?>
+                
                 <?php if (get_field('text_form_partners')) : ?>
                     <div class="section-desc text-center" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="150">
                         <?php the_field('text_form_partners'); ?>
                     </div>
                 <?php endif; ?>
-                <div class="partner-register__form" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-delay="150">
-                    <?php if (get_field('form_partners')) : ?>
-                        <?php the_field('form_partners'); ?>
-                    <?php endif; ?>
+                <div class="forms_warranty">
+                    <div class="d-flex flex-row align-items-center justify-content-center mx-auto ">
+                        <div class="form-check mx-5">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="cpf">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                <strong>CPF</strong>
+                            </label>
+                        </div>
+                            <div class="form-check mx-5">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="cnpj">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                <strong>CNPJ</strong>
+                            </label>
+                        </div>
+                    </div>                  
+                    
+                    <div id="cpf_form" class="partner-register__form" style="display:none"  >
+                            <?php the_field('cpf_form'); ?>
+                    </div>
+
+                    
                 </div>
+                <div id="form_cnpj" class="partner-register__form" style="display:none">
+
+                        <div class="section-desc text-center">
+                            <?php the_field('text_form_partners_cnpj'); ?>
+                        </div>
+
+                        <div >
+                        <?php the_field('form_cnpj'); ?>
+                        </div>
+                        
+                    </div>
             </div>
         </section>
     
