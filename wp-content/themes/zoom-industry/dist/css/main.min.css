@@ -4440,6 +4440,44 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     margin-bottom: 1rem;
     position: relative
 }
+.form-group h3{
+    text-align: center;
+}
+
+.form-control-attach {
+    border-radius: 5px;
+    border: 1px solid #ece5e5;
+    background-color: transparent !important;
+    font-size: .8125rem;
+    color: #212529;
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    height: auto;
+    line-height: 40px;
+    position: relative;
+    z-index: 99;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-weight: 400;
+    appearance: none;
+    -moz-appearance: none;
+    
+}
+.cf7mls_back.action-button{
+    background-color: #e3e3e3;
+    border: 0 none;
+    border-radius: 3px;
+    color: #23282d;
+    cursor: pointer;
+    font-weight: bold;    
+    padding: 13px 5px;
+    margin-top:1rem
+    min-width: 100px;
+    position: relative;
+    margin: 1.2rem 0 0 0;
+}
+form.cf7mls input.wpcf7-form-control.wpcf7-submit{
+    margin-top: 1.2rem!important;
+}
 
 .form-control {
     border-radius: 5px;
@@ -4548,7 +4586,8 @@ textarea.form-control {
 }
 
 .wpcf7 form .form-control.wpcf7-not-valid {
-    border-color: #db0000
+    border-color: #db0000;
+    margin-bottom: 0.25rem;
 }
 
 .wpcf7 form label {
@@ -4613,7 +4652,10 @@ textarea.form-control {
 
 .wpcf7-checkbox .wpcf7-list-item input[type=checkbox] {
     float: left;
-    margin-right: 15px
+    margin-right: 0.5rem;
+}
+#wpcf7-f7921-o1 > form > div.fieldset-cf7mls-wrapper > fieldset.fieldset-cf7mls.cf7mls_current_fs > div:nth-child(4) > span > span > span > label{
+    padding: 0 0 0 0.25rem;
 }
 
 .wpcf7-checkbox .wpcf7-list-item .wpcf7-list-item-label {
@@ -4621,7 +4663,12 @@ textarea.form-control {
     line-height: 15px;
     color: #949494;
     float: left;
-    max-width: 90%
+    max-width: 100%;
+}
+.wpcf7-form .fieldset-cf7mls{
+    padding: 2rem!important;
+    border-radius: 1rem!important;
+    background: #f5f5f5;
 }
 .form-check-input input:read-only{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")!important;
@@ -7301,7 +7348,7 @@ table.striped tr td:last-child {
 }
 
 .page-template-warrenty-active .partner-register .section-desc {
-    margin-bottom: 3rem
+    margin-bottom: 0
 }
 
 .page-template-warrenty-active .partner-register .section-desc p {
@@ -7561,11 +7608,30 @@ padding: 0;
 }
 
 .page-template-warrenty-active .partner-register .section-desc {
-    margin-bottom: 3rem
+    margin-bottom: 0
 }
 
 .page-template-warrenty-active .partner-register .section-desc p {
     margin: 0
+}
+.page-template-warrenty-active .forms_warranty{
+    margin-top: 2rem;
+}
+ .cf7mls_next.action-button img {
+    display: none;
+    width: 20px;
+    position: absolute;
+    right: 8rem;
+    color: black;
+    background: #777;
+    border-radius: 12px;
+    top: 0.9rem;
+    z-index: 999;
+}
+
+.page-template-warrenty-active .wpcf7-spinner{
+    top: 2rem;
+    left: 6rem;
 }
 
 .page-template-warrenty-active .partner-register__form {

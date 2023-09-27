@@ -113,11 +113,11 @@ get_header();
                             <?php the_field('text_form_partners_cnpj'); ?>
                         </div>
 
-                        <div >
+                        <div>
                         <?php the_field('form_cnpj'); ?>
                         </div>
                         
-                    </div>
+                </div>
             </div>
         </section>
     

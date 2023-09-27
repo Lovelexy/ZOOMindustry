@@ -147,6 +147,7 @@ function theme_register_sidebars()
 
 add_action( 'widgets_init', 'theme_register_sidebars' );
 
+
 /**
  * Set style.css in admin
  *

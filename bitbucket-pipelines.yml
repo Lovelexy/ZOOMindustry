@@ -1,0 +1,57 @@
+# This is a sample build configuration for PHP.
+# Check our guides at https://confluence.atlassian.com/x/e8YWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+#image: mtigdemir/deployer-pipeline
+image: php:7.2.28-cli-alpine
+#build: ./docker/deploy
+
+pipelines:
+  custom:
+    init-ftp:    
+    - step:
+        image: wagnerstephan/bitbucket-git-ftp:latest
+        script:
+          - git reset --hard
+          - git ftp init -u "$FTP_USERNAME" -p "$FTP_PASSWORD" ftp://$FTP_HOST
+  default:
+    - step:
+        caches:
+          - composer
+        script:
+          - apk add --update --no-cache openssh rsync git
+          - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+          - composer config -g github-oauth.github.com $TOKEN_GIT
+          #- composer config disable-tls false
+          - composer global require deployer/deployer
+          - composer global require deployer/recipes --dev
+
+  branches:
+      develop:
+        - step:
+            name: Deploy to Development
+            deployment: Test
+            caches:
+              - composer
+            script:
+              - apk add --update --no-cache openssh rsync git
+              - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+              - composer config -g github-oauth.github.com $TOKEN_GIT
+              #- composer config disable-tls false
+              - composer global require deployer/deployer:6.7.3
+              - composer global require deployer/recipes --dev
+              - export PATH=/root/.composer/vendor/bin:$PATH
+              - echo $CONFIG_ENV | base64 -d > ./wp-config.php.env
+              - echo $HTACCESS_ENV | base64 -d > ./.htaccess.env
+              - dep deploy -vvv development
+
+      master:
+        - step:
+            name: Deploy to production
+            deployment: Production
+            image: wagnerstephan/bitbucket-git-ftp:latest
+            script:
+              - echo $CONFIG_ENV | base64 -di > ./wp-config.php
+              - echo $HTACCESS_ENV | base64 -di > ./.htaccess
+              - git ftp push -u "$FTP_USERNAME" -p "$FTP_PASSWORD" ftp://$FTP_HOST
