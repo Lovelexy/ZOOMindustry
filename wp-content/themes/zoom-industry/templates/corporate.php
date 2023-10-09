@@ -100,7 +100,7 @@ get_header();
                     <?php
                     $image_dest2= get_field('img_dest_2_corporative');
                     if (!empty($image_dest2)) : ?>
-                        <figure data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="150">
+                        <figure >
                             <img src="<?php echo esc_url($image_dest2['url']); ?>" alt="<?php echo esc_attr($image_dest2['alt']); ?>" />
                         </figure>
                     <?php endif; ?>
@@ -108,6 +108,9 @@ get_header();
             </div>
         </div>
     </section>
+    
+    
+    
 
     <section class="corporate-products" id="equipamentos">
         <div class="container">
@@ -165,7 +168,7 @@ get_header();
                         </figure>
                         <h3><?php echo $title; ?></h3>
                         <div class="corporate-products-desk__buttons">
-                            <?php /*<a href="<?php echo $btnlink1; ?>" class="btn btn-md btn-primary"><?php echo $btntext1; ?></a>*/?>
+                            <a href="<?php echo $btnlink1; ?>" class="btn btn-md btn-primary"><?php echo $btntext1; ?></a>
                             <a href="<?php echo $btnlink2; ?>" class="btn btn-md btn-secondary"><?php echo $btntext2; ?></a>
                         </div>
                     </div>
