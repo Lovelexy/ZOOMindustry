@@ -6516,6 +6516,531 @@ table.striped tr td:last-child {
 .corporate-products-desk__buttons a.btn-secondary {
     margin-right: 0
 }
+/*---- holowits_cam CAMERAS*/
+.holowits_cam-intro {
+    position: relative;
+    overflow: hidden;
+    background: url(../images/bg-degrade.png) repeat left top
+}
+
+.holowits_cam-intro__text .holowits_cam-intro-bg {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%
+}
+
+@media (max-width:991px) {
+    .holowits_cam-intro__text .holowits_cam-intro-bg {
+        opacity: .1;
+        width: 100%
+    }
+}
+
+.holowits_cam-intro__text .wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    right: -5%;
+    bottom: 4rem;
+}
+
+@media (max-width:991px) {
+    .holowits_cam-intro__text .wrap {
+        padding: 5rem 0 1rem;
+        height: auto;
+        min-height: 300px
+    }
+}
+
+.holowits_cam-intro__text .wrap .page-title {
+    position: relative;
+    max-width: 375px;
+    margin-bottom: 1.5rem
+}
+
+@media (max-width:991px) {
+    .holowits_cam-intro__text .wrap .page-title {
+        margin: 0 auto 1.5rem;
+        max-width: 315px;
+        text-align: center
+    }
+}
+
+.holowits_cam-intro__text .wrap .page-title strong {
+    color: #ec974e
+}
+
+.holowits_cam-intro__text .wrap .page-title h1 {
+    display: inline-block;
+    position: relative;
+    color:#ffffff;
+}
+
+.holowits_cam-intro__text .wrap .section-desc {
+    max-width: 340px;
+    margin-bottom: 2rem
+}
+
+@media (max-width:991px) {
+    .holowits_cam-intro__text .wrap .section-desc {
+        margin: 0 auto 2rem;
+        max-width: 310px;
+        text-align: center
+    }
+}
+
+.holowits_cam-intro__text .wrap .section-desc p {
+    font-size: .875rem;
+    line-height: 18px;
+    color:#ffffff;
+}
+
+@media (max-width:991px) {
+    .holowits_cam-intro__text .wrap .btn {
+        margin: 0 auto;
+        max-width: 280px;
+        display: block
+    }
+}
+
+.holowits_cam-intro__image {
+    max-height: 475px;
+    height: 100%;
+    overflow: hidden;
+    min-height: 475px
+}
+
+@media (max-width:991px) {
+    .holowits_cam-intro__image {
+        max-height: none;
+        height: auto;
+        min-height: auto
+    }
+}
+
+.holowits_cam-intro__image .wrap {
+    background: #dadada;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    align-items: center
+}
+
+@media (max-width:991px) {
+    .holowits_cam-intro__image .wrap {
+        background: 0 0;
+        width: 100%;
+        position: relative;
+        display: none
+    }
+}
+
+.holowits_cam-intro__image figure {
+    max-width: 664px;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media (max-width:991px) {
+    .holowits_cam-intro__image figure {
+        max-width: 250px;
+        margin: 0 auto 2rem
+    }
+}
+
+.holowits_cam-intro__image figure img {
+    max-width: 800px
+}
+
+@media (max-width:991px) {
+    .holowits_cam-intro__image figure img {
+        max-width: 250px;
+        max-height: 200px;
+        margin: 0 auto;
+        display: block
+    }
+}
+
+.holowits_cam-highlight {
+    padding: 4rem 0;
+    position: relative;
+}
+
+@media (max-width:991px) {
+    .holowits_cam-highlight {
+        padding: 2rem 0 3rem
+    }
+}
+
+.holowits_cam-highlight:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/texture-diagonal-left.png) no-repeat 0 0;
+    background-size: contain;
+    width: 29%;
+    height: 100%;
+    z-index: -1
+}
+
+@media (max-width:991px) {
+    .holowits_cam-highlight:after {
+        width: 320px;
+        height: 47%
+    }
+}
+
+.holowits_cam-highlight.second:after {
+    right: 0;
+    background: url(../images/texture-diagonal-right.png) no-repeat 0 0;
+    background-size: contain;
+    left: auto
+}
+
+@media (max-width:991px) {
+    .holowits_cam-highlight.second .row {
+        flex-direction: column-reverse
+    }
+}
+
+.holowits_cam-highlight .section-title h2 {
+    color: #3c3c3b
+}
+
+.holowits_cam-highlight .section-title h2 strong {
+    color: #ec974e
+}
+
+@media (max-width:991px) {
+    .holowits_cam-highlight__text {
+        margin-top: 3rem;
+        text-align: center
+    }
+}
+
+.holowits_cam-highlight__text p {
+    font-size: .875rem;
+    line-height: 20px;
+    text-align: left
+}
+
+.holowits_cam-highlight__image figure {
+    margin: 0 auto;
+    text-align: center
+}
+
+@media (max-width:991px) {
+    .holowits_cam-highlight__image figure {
+        max-width: 300px
+    }
+
+    .holowits_cam-highlight__image figure img {
+        max-height: 220px
+    }
+}
+
+.holowits_cam-highlight__buttons {
+    margin-top: 2rem
+}
+
+.holowits_cam-highlight__buttons a {
+    margin-right: 20px
+}
+
+@media (max-width:991px) {
+    .holowits_cam-highlight__buttons a {
+        margin: 0 auto 1rem;
+        display: block;
+        max-width: 165px
+    }
+}
+
+@media (max-width:991px) {
+    .holowits_cam-products {
+        padding: 1rem 0 2rem
+    }
+}
+
+.holowits_cam-products .section-title {
+    margin-bottom: 3rem
+}
+
+.holowits_cam-products .section-title h2 {
+    color: #3c3c3b
+}
+
+@media (max-width:991px) {
+    .holowits_cam-products__item {
+        margin-bottom: 3rem
+    }
+}
+
+.holowits_cam-products__item figure {
+    margin: 0 auto 1rem;
+    text-align: center;
+    max-height: 170px
+}
+
+.holowits_cam-products__item figure img {
+    max-height: 170px
+}
+
+.holowits_cam-products__item h3 {
+    color: #3c3c3b;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center
+}
+
+.holowits_cam-products__item h3 strong {
+    color: #ec974e
+}
+
+.holowits_cam-products__item a:hover {
+    text-decoration: none
+}
+
+.holowits_cam-products__item a:hover h3 {
+    text-decoration: none
+}
+
+.holowits_cam-products__item p {
+    text-align: center;
+    font-size: .875rem;
+    line-height: 18px
+}
+
+.holowits_cam-products-models {
+    padding: 5rem 0 2rem
+}
+
+@media (max-width:991px) {
+    .holowits_cam-products-models {
+        padding: 1rem 0 2rem
+    }
+}
+
+.holowits_cam-products-models .section-title {
+    margin-bottom: 3rem
+}
+
+@media (max-width:991px) {
+    .holowits_cam-products-models .section-title {
+        margin-bottom: 2rem
+    }
+}
+
+.holowits_cam-products-models .section-title h2 {
+    color: #3c3c3b
+}
+
+.holowits_cam-products-models__item {
+    margin-bottom: 3rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+@media (max-width:991px) {
+    .holowits_cam-products-models__item {
+        margin-bottom: 3rem
+    }
+}
+
+.holowits_cam-products-models__item figure {
+    margin: 0 auto 1rem;
+    text-align: center;
+    height: 170px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    flex-shrink: 0
+}
+
+.holowits_cam-products-models__item figure img {
+    max-height: 170px;
+    max-width: 256px
+}
+
+.holowits_cam-products-models__item h3 {
+    color: #3c3c3b;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center
+}
+
+.holowits_cam-products-models__item h3 strong {
+    color: #ec974e
+}
+
+.holowits_cam-products-models__item p {
+    font-size: .875rem;
+    line-height: 18px;
+    max-width: 255px;
+    margin: 0 auto 1.5rem;
+    text-align: center
+}
+
+@media (max-width:991px) {
+    .holowits_cam-products-models__item p {
+        text-align: center
+    }
+}
+
+.holowits_cam-products-models__item .desc {
+    min-height: 91px;
+    margin-bottom: 1.2rem
+}
+
+.holowits_cam-products-models__item .desc p {
+    max-width: 300px;
+    margin: 0 auto
+}
+
+.holowits_cam-products-models__item-info {
+    border: 1px solid #e7e7e7;
+    padding: 30px;
+    max-width: 255px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    min-height: 80vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+@media (max-width:991px) {
+    .holowits_cam-products-models__item-info {
+        min-height: auto
+    }
+}
+
+.holowits_cam-products-models__item-info p {
+    text-align: left;
+    font-size: .875rem;
+    line-height: 18px;
+    margin-bottom: 1rem
+}
+
+.holowits_cam-products-models__item-info .btn {
+    margin: 0 auto 0;
+    display: block;
+    max-width: 155px
+}
+
+.holowits_cam-products-desk {
+    background: url(../images/bg-texture-light-full.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 3rem 0
+}
+
+.holowits_cam-products-desk .section-title h2 {
+    color: #3c3c3b
+}
+
+.holowits_cam-products-desk .section-title h2 strong {
+    color: #ec974e
+}
+
+.holowits_cam-products-desk .section-desc {
+    max-width: 605px;
+    margin: 0 auto 4rem
+}
+
+.holowits_cam-products-desk .section-desc p {
+    text-align: center;
+    font-size: .875rem;
+    line-height: 18px
+}
+
+.holowits_cam-products-desk__item {
+    margin-bottom: 2rem
+}
+
+.holowits_cam-products-desk__item figure {
+    margin: 0 auto 1rem;
+    text-align: center;
+    max-height: 230px;
+    height: 100%
+}
+
+.holowits_cam-products-desk__item figure img {
+    max-height: 230px
+}
+
+.holowits_cam-products-desk__item h3 {
+    text-align: center;
+    font-size: .875rem;
+    line-height: 18px;
+    font-weight: 700;
+    margin:2rem 0;
+}
+
+.holowits_cam-products-desk__buttons {
+    margin: 2rem auto 0;
+    text-align: center
+}
+
+.holowits_cam-products-desk__buttons a {
+    margin-right: 20px
+}
+
+.holowits_cam-products-desk__buttons a.btn-secondary {
+    margin-right: 0
+}
+@media (max-width:991px) {
+    .holowits_cam-products-desk__buttons a.btn-secondary {
+        margin-bottom: 3rem
+    }
+}
+
+/* END HOLOWITS CAMERAS */
 
 /*---- HOLOWITS*/
 .holowits-intro {
